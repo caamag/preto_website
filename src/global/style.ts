@@ -22,4 +22,8 @@ export const GlobalStyle = createGlobalStyle`
     input {
         border: none;
     }
+
+    h1 {
+        font-size: 8rem;
+    }
 `;
