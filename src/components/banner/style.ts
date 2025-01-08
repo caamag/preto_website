@@ -14,7 +14,7 @@ const FadeInText = keyframes`
 `;
 
 export const BannerContainer = styled.div<{ bgImagePath?: string }>`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: rgb(50, 50, 50);
   background-image: url(${(p) => p.bgImagePath || ""});
@@ -54,5 +54,7 @@ export const BannerContainer = styled.div<{ bgImagePath?: string }>`
     p {
       font-size: 1.6rem;
     }
+
+    justify-content: center;
   }
 `;
