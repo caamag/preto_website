@@ -18,6 +18,9 @@ export const BannerContainer = styled.div<{ bgImagePath?: string }>`
   height: 100vh;
   background-color: rgb(50, 50, 50);
   background-image: url(${(p) => p.bgImagePath || ""});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
 
   display: flex;

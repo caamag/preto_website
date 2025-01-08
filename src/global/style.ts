@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-size: 8rem;
+        font-size: 7rem;
+        line-height: 70px;
     }
 `;
