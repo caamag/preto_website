@@ -5,7 +5,15 @@ import { NavLink } from "react-router-dom";
 import InitialBanner from "../../components/banner";
 
 //images
-import homeBanner from "../../assets/homeBanner.png";
+import homeBanner from "./assets/homeBanner.png";
+import artDirection from "./assets/direcao-arte.png";
+import eventPhoto from "./assets/eventPhoto.png";
+import studio from "./assets/studio.png";
+import business from "./assets/business.png";
+import courses from "./assets/courses.png";
+import product from "./assets/product.png";
+import brandDesign from "./assets/brandDesign.png";
+import married from "./assets/married.png";
 
 const HomePage = () => {
   return (
@@ -23,28 +31,58 @@ const HomePage = () => {
       <Css.SectionsContainer>
         <Css.SectionContent>
           <NavLink to={"/direca-de-arte"}>
-            <Css.SectionItem></Css.SectionItem>
+            <Css.SectionItem bgImagePath={artDirection}>
+              <h3>
+                Direção <br /> de Arte
+              </h3>
+            </Css.SectionItem>
           </NavLink>
           <NavLink to={"/shows-e-eventos"}>
-            <Css.SectionItem></Css.SectionItem>
+            <Css.SectionItem bgImagePath={eventPhoto}>
+              <h3>
+                Shows <br /> e Eventos
+              </h3>
+            </Css.SectionItem>
           </NavLink>
           <NavLink to={"/fotografia-de-estudio"}>
-            <Css.SectionItem></Css.SectionItem>
+            <Css.SectionItem bgImagePath={business}>
+              <h3>Corporativos</h3>
+            </Css.SectionItem>
           </NavLink>
           <NavLink to={"/corporativos"}>
-            <Css.SectionItem></Css.SectionItem>
+            <Css.SectionItem bgImagePath={studio}>
+              <h3>
+                Fotografia <br /> de Estúdio
+              </h3>
+            </Css.SectionItem>
           </NavLink>
           <NavLink to={"/cursos-e-treinamentos"}>
-            <Css.SectionItem></Css.SectionItem>
+            <Css.SectionItem bgImagePath={courses}>
+              <h3>
+                Cursos <br /> e Treinamentos
+              </h3>
+            </Css.SectionItem>
           </NavLink>
           <NavLink to={"/fotografia-de-produto"}>
-            <Css.SectionItem></Css.SectionItem>
+            <Css.SectionItem bgImagePath={product}>
+              <h3>
+                Fotografia <br /> de Produto
+              </h3>
+            </Css.SectionItem>
           </NavLink>
           <NavLink to={"/design-de-marca"}>
-            <Css.SectionItem></Css.SectionItem>
+            <Css.SectionItem bgImagePath={brandDesign}>
+              <h3>
+                Design <br /> de Marca
+              </h3>
+            </Css.SectionItem>
           </NavLink>
           <NavLink to={"/casamento-e-social"}>
-            <Css.SectionItem></Css.SectionItem>
+            <Css.SectionItem bgImagePath={married}>
+              <h3>
+                Casamento <br /> e Social
+              </h3>
+            </Css.SectionItem>
           </NavLink>
         </Css.SectionContent>
       </Css.SectionsContainer>

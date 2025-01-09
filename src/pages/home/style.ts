@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../theme/colors";
 
 export const HomeContainer = styled.div``;
 
@@ -16,10 +17,29 @@ export const SectionContent = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  a {
+    text-decoration: none;
+  }
 `;
 
-export const SectionItem = styled.div`
+export const SectionItem = styled.div<{ bgImagePath: string }>`
   width: 300px;
   height: 300px;
-  border: solid 1px white;
+  background-image: url(${(p) => p.bgImagePath});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: start;
+  align-items: end;
+
+  h3 {
+    color: black;
+    background-color: ${colors.primaryYellow};
+    font-size: 3rem;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+  }
 `;
