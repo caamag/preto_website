@@ -51,8 +51,8 @@ export const BannerContainer = styled.div<{ bgImagePath?: string }>`
 
   @media screen and (max-width: 800px) {
     h1 {
-      font-size: 3.5rem;
-      line-height: 50px;
+      font-size: 3rem;
+      line-height: 30px;
     }
 
     p {
