@@ -30,11 +30,6 @@ export const HeaderContent = styled.div`
   align-items: center;
   justify-content: space-evenly;
 
-  h1 {
-    color: white;
-    font-size: 4rem;
-  }
-
   img {
     width: 30px;
     height: 30px;
@@ -54,6 +49,13 @@ export const HeaderContent = styled.div`
       margin-right: 15px;
     }
   }
+`;
+
+export const Logo = styled.img`
+  width: 250px !important;
+  height: auto !important;
+  display: block !important;
+  filter: invert(0%) !important;
 `;
 
 export const Navigation = styled.nav`

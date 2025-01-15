@@ -37,6 +37,19 @@ export const LogoContent = styled.div`
   width: 30%;
   display: flex;
   justify-content: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 80%;
+
+    img {
+      margin-top: -100px;
+    }
+  }
 `;
 
 export const ContactContainer = styled.div`

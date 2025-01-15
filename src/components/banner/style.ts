@@ -1,17 +1,5 @@
 import styled from "styled-components";
 import colors from "../../theme/colors";
-import { keyframes } from "styled-components";
-
-const FadeInText = keyframes`
-  0% {
-    opacity: 0;
-    margin-left: 150px;
-  } 
-  100% {
-    opacity: 1;
-    margin-left: 0px;
-  }
-`;
 
 export const BannerContainer = styled.div<{ bgImagePath?: string }>`
   width: 100%;
@@ -42,11 +30,6 @@ export const BannerContainer = styled.div<{ bgImagePath?: string }>`
     span {
       color: white;
     }
-  }
-
-  h1,
-  p {
-    animation: ${FadeInText} 350ms;
   }
 
   @media screen and (max-width: 800px) {

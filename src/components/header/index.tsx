@@ -1,7 +1,10 @@
 import * as Css from "./style";
 import { NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+
+//images
 import sideMenu from "../../assets/side-menu.png";
+import logo from "../../assets/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -19,7 +22,7 @@ const Header = () => {
   return (
     <Css.Header>
       <Css.HeaderContent>
-        <h1>Preto</h1>
+        <Css.Logo src={logo} alt="Logo" />
 
         <Css.Navigation>
           <NavLink to={"/"}>Home</NavLink>

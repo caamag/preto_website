@@ -5,13 +5,14 @@ import { NavLink } from "react-router-dom";
 import instaIcon from "../../assets/instagram.png";
 import faceIcon from "../../assets/facebook.png";
 import whatsIcon from "../../assets/whatsapp.png";
+import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
     <Css.Footer>
       <Css.FooterContent>
         <Css.LogoContent>
-          <h1>Logo</h1>
+          <img src={logo} alt="" />
         </Css.LogoContent>
         <Css.ContactContainer>
           <Css.ContactContent>
