@@ -4,7 +4,7 @@ import * as Css from "./style";
 interface BannerProps {
   children: ReactNode;
   bgImagePath: string;
-  mobileImagePath: string;
+  mobileImagePath?: string;
 }
 
 const InitialBanner = ({
