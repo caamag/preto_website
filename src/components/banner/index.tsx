@@ -3,12 +3,17 @@ import * as Css from "./style";
 
 interface BannerProps {
   children: ReactNode;
-  bgImagePath?: string;
+  bgImagePath: string;
+  mobileImagePath: string;
 }
 
-const InitialBanner = ({ children, bgImagePath }: BannerProps) => {
+const InitialBanner = ({
+  children,
+  bgImagePath,
+  mobileImagePath,
+}: BannerProps) => {
   return (
-    <Css.BannerContainer bgImagePath={bgImagePath}>
+    <Css.BannerContainer bgImagePath={bgImagePath} mobilebg={mobileImagePath}>
       {children}
     </Css.BannerContainer>
   );

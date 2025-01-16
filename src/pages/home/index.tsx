@@ -7,6 +7,7 @@ import InitialBanner from "../../components/banner";
 
 //images
 import homeBanner from "./assets/homeBanner.png";
+import mobileBackground from "./assets/mobile-home-background.jpg";
 import artDirection from "./assets/direcao-arte.png";
 import eventPhoto from "./assets/eventPhoto.png";
 import studio from "./assets/studio.png";
@@ -19,7 +20,10 @@ import married from "./assets/married.png";
 const HomePage = () => {
   return (
     <Css.HomeContainer>
-      <InitialBanner bgImagePath={homeBanner}>
+      <InitialBanner
+        bgImagePath={homeBanner}
+        mobileImagePath={mobileBackground}
+      >
         <h1>
           <span>Criatividade,</span> <br /> pesquisa e <span>intuição.</span>
         </h1>

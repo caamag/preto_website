@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import colors from "../../theme/colors";
 
-export const BannerContainer = styled.div<{ bgImagePath?: string }>`
+export const BannerContainer = styled.div<{
+  bgImagePath: string;
+  mobilebg: string;
+}>`
   width: 100%;
   height: 100vh;
   background-color: rgb(50, 50, 50);
@@ -33,6 +36,8 @@ export const BannerContainer = styled.div<{ bgImagePath?: string }>`
   }
 
   @media screen and (max-width: 800px) {
+    background-image: url(${(p) => p.mobilebg || ""});
+
     h1 {
       font-size: 3rem;
       line-height: 30px;
