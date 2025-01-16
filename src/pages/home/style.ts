@@ -52,3 +52,23 @@ export const SectionItem = styled.div<{ bgImagePath: string }>`
     margin-bottom: 10px;
   }
 `;
+
+export const BrandContent = styled.div`
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  img {
+    width: auto;
+    height: 150px;
+  }
+
+  @media screen and (max-width: 600px) {
+    img {
+      height: 100px;
+    }
+  }
+`;

@@ -1,5 +1,6 @@
 import * as Css from "./style";
 import { NavLink } from "react-router-dom";
+import { brandIconsList } from "../../global/icons";
 
 //components
 import InitialBanner from "../../components/banner";
@@ -86,6 +87,11 @@ const HomePage = () => {
           </NavLink>
         </Css.SectionContent>
       </Css.SectionsContainer>
+      <Css.BrandContent>
+        {Object.entries(brandIconsList).map(([key, icon]) => (
+          <img src={icon} alt={key} />
+        ))}
+      </Css.BrandContent>
     </Css.HomeContainer>
   );
 };
