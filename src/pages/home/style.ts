@@ -32,24 +32,30 @@ export const SectionContent = styled.div`
   }
 `;
 
-export const SectionItem = styled.div<{ bgImagePath: string }>`
+export const SectionItem = styled.div`
   width: 100%;
   aspect-ratio: 1;
-  background-image: url(${(p) => p.bgImagePath});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
   display: flex;
-  justify-content: start;
-  align-items: end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
     color: black;
     background-color: ${colors.primaryYellow};
-    font-size: 3rem;
-    padding: 0px 10px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    padding: 5px 10px;
   }
 `;
 

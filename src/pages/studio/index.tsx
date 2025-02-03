@@ -20,7 +20,7 @@ const StudioPage = () => {
       <Css.SectionsContainer>
         <Css.SectionContent>
           {images.map((image) => (
-            <Css.Card src={image} />
+            <Css.Card src={image} loading="lazy" />
           ))}
         </Css.SectionContent>
       </Css.SectionsContainer>

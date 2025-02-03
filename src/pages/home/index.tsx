@@ -36,54 +36,62 @@ const HomePage = () => {
       <Css.SectionsContainer>
         <Css.SectionContent>
           <NavLink to={"/direca-de-arte"}>
-            <Css.SectionItem bgImagePath={artDirection}>
+            <Css.SectionItem>
+              <img src={artDirection} alt="Direção de arte" />
               <h3>
                 Direção <br /> de Arte
               </h3>
             </Css.SectionItem>
           </NavLink>
           <NavLink to={"/shows-e-eventos"}>
-            <Css.SectionItem bgImagePath={eventPhoto}>
+            <Css.SectionItem>
+              <img src={eventPhoto} alt="Eventos" />
               <h3>
                 Shows <br /> e Eventos
               </h3>
             </Css.SectionItem>
           </NavLink>
           <NavLink to={"/fotografia-de-estudio"}>
-            <Css.SectionItem bgImagePath={business}>
+            <Css.SectionItem>
+              <img src={business} alt="" />
               <h3>Corporativos</h3>
             </Css.SectionItem>
           </NavLink>
           <NavLink to={"/corporativos"}>
-            <Css.SectionItem bgImagePath={studio}>
+            <Css.SectionItem>
+              <img src={studio} alt="" />
               <h3>
                 Fotografia <br /> de Estúdio
               </h3>
             </Css.SectionItem>
           </NavLink>
           <NavLink to={"/cursos-e-treinamentos"}>
-            <Css.SectionItem bgImagePath={courses}>
+            <Css.SectionItem>
+              <img src={courses} alt="" />
               <h3>
                 Cursos <br /> e Treinamentos
               </h3>
             </Css.SectionItem>
           </NavLink>
           <NavLink to={"/fotografia-de-produto"}>
-            <Css.SectionItem bgImagePath={product}>
+            <Css.SectionItem>
+              <img src={product} alt="" />
               <h3>
                 Fotografia <br /> de Produto
               </h3>
             </Css.SectionItem>
           </NavLink>
           <NavLink to={"/design-de-marca"}>
-            <Css.SectionItem bgImagePath={brandDesign}>
+            <Css.SectionItem>
+              <img src={brandDesign} alt="" />
               <h3>
                 Design <br /> de Marca
               </h3>
             </Css.SectionItem>
           </NavLink>
           <NavLink to={"/casamento-e-social"}>
-            <Css.SectionItem bgImagePath={married}>
+            <Css.SectionItem>
+              <img src={married} alt="" />
               <h3>
                 Casamento <br /> e Social
               </h3>
