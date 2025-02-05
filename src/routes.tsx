@@ -10,6 +10,7 @@ import Footer from "./components/footer";
 import HomePage from "./pages/home";
 import EventPage from "./pages/events";
 import StudioPage from "./pages/studio";
+import ArtDirectionPage from "./pages/artDirection";
 
 const Router = () => {
   const ScrollToTop = () => {
@@ -30,6 +31,7 @@ const Router = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/shows-e-eventos" element={<EventPage />} />
         <Route path="/estudio" element={<StudioPage />} />
+        <Route path="/direcao-de-arte" element={<ArtDirectionPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

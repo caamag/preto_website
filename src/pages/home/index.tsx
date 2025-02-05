@@ -35,7 +35,7 @@ const HomePage = () => {
 
       <Css.SectionsContainer>
         <Css.SectionContent>
-          <NavLink to={"/direca-de-arte"}>
+          <NavLink to={"/direcao-de-arte"}>
             <Css.SectionItem>
               <img src={artDirection} alt="Direção de arte" />
               <h3>

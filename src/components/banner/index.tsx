@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import * as Css from "./style";
 
 interface BannerProps {
-  children: ReactNode;
+  children?: ReactNode;
   bgImagePath: string;
   mobileImagePath?: string;
 }

@@ -5,6 +5,7 @@ export const Header = styled.header`
   height: 100px;
   background-color: rgb(0, 0, 0, 0.9);
   position: fixed;
+  z-index: 10;
 
   .active {
     color: white;
