@@ -51,13 +51,13 @@ const HomePage = () => {
               </h3>
             </Css.SectionItem>
           </NavLink>
-          <NavLink to={"/fotografia-de-estudio"}>
+          <NavLink to={"/corporativo"}>
             <Css.SectionItem>
               <img src={business} alt="" />
               <h3>Corporativos</h3>
             </Css.SectionItem>
           </NavLink>
-          <NavLink to={"/corporativos"}>
+          <NavLink to={"/estudio"}>
             <Css.SectionItem>
               <img src={studio} alt="" />
               <h3>
