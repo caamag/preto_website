@@ -30,7 +30,7 @@ const Header = () => {
           <NavLink to={"/casamento"}>Casamento</NavLink>
           <NavLink to={"/brand"}>Brand</NavLink>
           <NavLink to={"/propaganda"}>Propaganda</NavLink>
-          <NavLink to={"/curso"}>Curso</NavLink>
+          <NavLink to={"/cursos-e-treinamentos"}>Curso</NavLink>
         </Css.Navigation>
 
         <button
